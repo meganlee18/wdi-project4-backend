@@ -1,5 +1,7 @@
 var pgp = require('pg-promise')()
 
+var cors = require('cors')
+
 const qs = require('query-string')
 const express = require('express')
 const app = express()
@@ -11,6 +13,8 @@ const PORT = process.env.PORT || 5000;
 // var db = pgp({
 //   database: 'db_travelkit'
 // })
+
+app.use(cors())
 
 app.listen(PORT, () => {
   console.log(`listening on ${PORT}`)
