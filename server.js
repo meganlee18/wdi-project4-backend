@@ -6,7 +6,7 @@ const app = express()
 const request = require('request');
 const dsKey = process.env['DARK_SKY_API_KEY']
 
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 
 // var db = pgp({
 //   database: 'db_travelkit'
