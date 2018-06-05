@@ -8,9 +8,9 @@ const dsKey = process.env['DARK_SKY_API_KEY']
 
 const PORT = 5000;
 
-var db = pgp({
-  database: 'db_travelkit'
-})
+// var db = pgp({
+//   database: 'db_travelkit'
+// })
 
 app.listen(PORT, () => {
   console.log(`listening on ${PORT}`)
